@@ -33,6 +33,12 @@ vec4 vec4::operator*(float i)
 	return result;
 }
 
+vec4 vec4::operator*(vec4 i)
+{
+	vec4 result(x * i.x, y * i.y, z * i.z, w * i.w);
+	return result;
+}
+
 vec4 vec4::operator+(vec4 i)
 {
 	vec4 result(x + i.x, y + i.y, z + i.z, w + i.w);
