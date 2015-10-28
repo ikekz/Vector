@@ -37,3 +37,8 @@ vec4 vec4::operator*(float i)
 	result.w = w * i;
 	return result;
 }
+
+float vec4::Length()
+{
+	return sqrt(pow(this->x, 2) + pow(this->y, 2) + pow(this->z, 2) + pow(this->w, 2));
+}
