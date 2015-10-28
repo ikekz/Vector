@@ -10,6 +10,7 @@ struct vec4
 	float Length();
 	vec4 operator*(float i);
 	vec4 operator+(vec4 i);
+	vec4 operator-(vec4 i);
 	void print();
 	void println();
 };

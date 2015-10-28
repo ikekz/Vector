@@ -39,6 +39,13 @@ vec4 vec4::operator+(vec4 i)
 	return result;
 }
 
+vec4 vec4::operator-(vec4 i)
+{
+	vec4 result(x - i.x, y - i.y, z - i.z, w - i.w);
+	return result;
+}
+
+
 float vec4::Length()
 {
 	return sqrt(pow(x, 2) + pow(y, 2) + pow(z, 2) + pow(w, 2));
