@@ -29,11 +29,7 @@ void vec4::println()
 
 vec4 vec4::operator*(float i)
 {
-	vec4 result;
-	result.x = x * i;
-	result.y = y * i;
-	result.z = z * i;
-	result.w = w * i;
+	vec4 result(x * i, y * i, z * i, w * i);
 	return result;
 }
 
@@ -45,7 +41,7 @@ vec4 vec4::operator+(vec4 i)
 
 float vec4::Length()
 {
-	return sqrt(pow(this->x, 2) + pow(this->y, 2) + pow(this->z, 2) + pow(this->w, 2));
+	return sqrt(pow(x, 2) + pow(y, 2) + pow(z, 2) + pow(w, 2));
 }
 
 vec4 vec4::NormalizeInPlace()
