@@ -63,3 +63,8 @@ vec4 vec4::NormalizeInPlace()
 	tmp = *this * (1.0f / this->Length());
 	return tmp;
 }
+
+float vec4::Dot(vec4 scr1, vec4 scr2)
+{
+	return scr1.x * scr2.x + scr1.y * scr2.y + scr1.z * scr2.z + scr1.w * scr2.w;
+}

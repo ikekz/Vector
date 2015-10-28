@@ -12,6 +12,7 @@ struct vec4
 	vec4 operator*(vec4 i);
 	vec4 operator+(vec4 i);
 	vec4 operator-(vec4 i);
+	static float Dot(vec4 scr1, vec4 scr2);
 	void print();
 	void println();
 };
