@@ -37,10 +37,3 @@ vec4 vec4::operator*(float i)
 	result.w = w * i;
 	return result;
 }
-
-void vec4::Normalize()
-{
-	float inv_length = 1.0f / (sqrt(pow(x, 2) + pow(y, 2) + pow(z, 2) + pow(w, 2)));
-	//vec4 = vec4 * inv_length;
-	//dodelat'
-}
