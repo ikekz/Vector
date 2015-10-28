@@ -13,8 +13,7 @@ vec4::vec4(float dx, float dy, float dz, float dw)
 
 void vec4::Normalize(vec4* scr, vec4* dst)
 {
-	float inv_length = 1.0f / (sqrt(pow(scr->x, 2) + pow(scr->y, 2) + pow(scr->z, 2) + pow(scr->w, 2)));
-	*dst = *scr * inv_length;
+	*dst = *scr * (1.0f / scr->Length());
 }
 
 void vec4::print()
